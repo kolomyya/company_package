@@ -6,7 +6,7 @@
       when: ansible_os_family == "Debian"
       package:
         name: apache2
-        state:absent
+        state: absent
     - name: install webserver  centos
       when: ansible_os_family == "RedHat"
       package:
