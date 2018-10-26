@@ -6,7 +6,7 @@
       when: ansible_os_family == "RedHat"
       group:
         name: "{{ item }}"
-        state:absent
+        state: absent
       with_items:
         - managers
         - sales
